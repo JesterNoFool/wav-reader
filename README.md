@@ -5,3 +5,5 @@ gcc wav-reader.c -o wav-reader
 Once compiled, it can be used with ./wav-reader <WAV file name>
 
 On a Linux system, once compiled, it can be added to /usr/local/bin (typically part of the PATH) so that it can be called from any directory. 
+
+NOTE: This program was written on and for Linux. I don't know if it will work on Windows unaltered.
