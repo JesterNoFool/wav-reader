@@ -69,8 +69,8 @@ Chunk size: 1948 bytes
 Chunk data size: 1940 bytes
 Removing NULL characters, if any.
 Found and removed NULL characters.
-Found XML text. Parsing...
-![Screenshot of output of XML text within an "auxi" chunk of a .WAV file.](wav-reader-example-cropped.jpg)
-********************************
+Found XML text. Parsing...</pre>
+![Screenshot of output of XML text within an auxi chunk of a .WAV file.](wav-reader-example-cropped.jpg)
+<pre>********************************
 Chunk type: Data (data).
 Chunk size shown in DS64 section.</pre>
