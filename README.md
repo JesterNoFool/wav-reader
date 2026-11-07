@@ -1,3 +1,5 @@
+# Introduction
+
 This program is a command line tool designed to read and display the metadata for .WAV files used in the collection of IQ data, such as is captured by SDR (software defined radios). As I'm not a real programmer, this is a VERY basic program. It can be compiled using GCC as follows:
 
 <pre>gcc wav-reader.c -o wav-reader</pre>
@@ -8,7 +10,7 @@ On a Linux system, once compiled, it can be added to /usr/local/bin (typically p
 
 NOTE: This program was written on and for Linux. I don't know if it will work on Windows unaltered.
 
-Examples
+# Examples
 
 <pre>./wav-reader SDRsharp-12-28-23_91998418Hz.wav 
 WAVE Reader.
