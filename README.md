@@ -1,4 +1,4 @@
-This program was designed to read and display the metadata for .WAV files used in the collection of IQ data, such as is captured by SDR (software defined radios). As I'm not a real programmer, this is a VERY basic program. It can be compiled using GCC as follows:
+This program is a command line tool designed to read and display the metadata for .WAV files used in the collection of IQ data, such as is captured by SDR (software defined radios). As I'm not a real programmer, this is a VERY basic program. It can be compiled using GCC as follows:
 
 gcc wav-reader.c -o wav-reader
 
