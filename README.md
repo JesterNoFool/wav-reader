@@ -4,7 +4,7 @@ This program is a command line tool designed to read and display the metadata fo
 
 <pre>gcc wav-reader.c -o wav-reader</pre>
 
-Once compiled, it can be used with ./wav-reader <WAV file name>
+Once compiled, it can be used with <pre>./wav-reader \<WAV file name\></pre>
 
 On a Linux system, once compiled, it can be added to /usr/local/bin (typically part of the PATH) so that it can be called from any directory. 
 
