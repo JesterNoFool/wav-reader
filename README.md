@@ -39,7 +39,8 @@ Bits / sample: 16.
 Chunk type: Data (data).
 Chunk size shown in DS64 section.</pre>
 
-<pre>./wav-reader SDRuno-20261103-91.600MHz-01.wav 
+```
+./wav-reader SDRuno-20261103-91.600MHz-01.wav 
 WAVE Reader.
 ********************************
 Filename: SDRuno-20261103-91.600MHz-01.wav
@@ -71,37 +72,39 @@ Chunk size: 1948 bytes
 Chunk data size: 1940 bytes
 Removing NULL characters, if any.
 Found and removed NULL characters.
-Found XML text. Parsing...</pre>
-\<?xml<br />
-version="1.0"?\><br />
-\<SDR-XML-Root<br />
-Description="Saved recording data"<br />
-Created="29-Oct-2026 16:47"><br />
-<Definition<br />
-CurrentTimeUTC="29-10-2026 16:47:58"<br />
-Filename="29-Oct-2026 124758.175 91.600MHz.wav"<br />
-FirstFile="29-Oct-2026 124758.175 91.600MHz.wav"<br />
-Folder="C:\Users\schaf\OneDrive\Documents"<br />
-InternalTag="6AE3-78BE-00AF"<br />
-PreviousFile=""<br />
-RadioModel="Airspy"<br />
-RadioSerial=""<br />
-SoftwareName="SDR Console"<br />
-SoftwareVersion="Version 3.4 build 4170"<br />
-UTC="29-10-2026 16:47:58"<br />
-XMLLevel="XMLLevel003"<br />
-CreatedBy="Gary on NEWBRAIN"<br />
-TimeZoneStatus="2"<br /> TimeZoneInfo="LAEAAEUAYQBzAHQAZQByAG4AIABTAHQAYQBuAGQAYQByAGQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAABAAIAAAAAAAAAAAAAAEUAYQBzAHQAZQByAG4AIABEAGEAeQBsAGkAZwBoAHQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAACAAIAAAAAAAAAxP///w=="<br />
-DualMode="0"<br />
-Sequence="0"<br />
-ADFrequency="0"<br />
-BitsPerSample="16"<br />
-BytesPerSecond="40000000"<br />
-RadioCenterFreq="91600000"<br />
-SampleRate="10000000"<br />
-UTCSeconds="1793292478"<br />
-TimeBias="0"/\><br />
-\</SDR-XML-Root\><br />
-<pre>********************************
+Found XML text. Parsing...
+<?xml
+version="1.0"?\>
+\<SDR-XML-Root
+Description="Saved recording data"
+Created="29-Oct-2026 16:47">
+<Definition
+CurrentTimeUTC="29-10-2026 16:47:58"
+Filename="29-Oct-2026 124758.175 91.600MHz.wav"
+FirstFile="29-Oct-2026 124758.175 91.600MHz.wav"
+Folder="C:\Users\schaf\OneDrive\Documents"
+InternalTag="6AE3-78BE-00AF"
+PreviousFile=""
+RadioModel="Airspy"
+RadioSerial=""
+SoftwareName="SDR Console"
+SoftwareVersion="Version 3.4 build 4170"
+UTC="29-10-2026 16:47:58"
+XMLLevel="XMLLevel003"
+CreatedBy="Gary on NEWBRAIN"
+TimeZoneStatus="2"
+TimeZoneInfo="LAEAAEUAYQBzAHQAZQByAG4AIABTAHQAYQBuAGQAYQByAGQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAABAAIAAAAAAAAAAAAAAEUAYQBzAHQAZQByAG4AIABEAGEAeQBsAGkAZwBoAHQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAACAAIAAAAAAAAAxP///w=="
+DualMode="0"
+Sequence="0"
+ADFrequency="0"
+BitsPerSample="16"
+BytesPerSecond="40000000"
+RadioCenterFreq="91600000"
+SampleRate="10000000"
+UTCSeconds="1793292478"
+TimeBias="0"/\>
+\</SDR-XML-Root\>
+********************************
 Chunk type: Data (data).
-Chunk size shown in DS64 section.</pre>
+Chunk size shown in DS64 section.
+```
