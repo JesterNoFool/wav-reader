@@ -72,7 +72,36 @@ Chunk data size: 1940 bytes
 Removing NULL characters, if any.
 Found and removed NULL characters.
 Found XML text. Parsing...</pre>
-![Screenshot of output of XML text within an auxi chunk of a .WAV file.](wav-reader-example-cropped.jpg)
+\<?xml<br />
+version="1.0"?\><br />
+\<SDR-XML-Root<br />
+Description="Saved recording data"<br />
+Created="29-Oct-2026 16:47"><br />
+<Definition<br />
+CurrentTimeUTC="29-10-2026 16:47:58"<br />
+Filename="29-Oct-2026 124758.175 91.600MHz.wav"<br />
+FirstFile="29-Oct-2026 124758.175 91.600MHz.wav"<br />
+Folder="C:\Users\schaf\OneDrive\Documents"<br />
+InternalTag="6AE3-78BE-00AF"<br />
+PreviousFile=""<br />
+RadioModel="Airspy"<br />
+RadioSerial=""<br />
+SoftwareName="SDR Console"<br />
+SoftwareVersion="Version 3.4 build 4170"<br />
+UTC="29-10-2026 16:47:58"<br />
+XMLLevel="XMLLevel003"<br />
+CreatedBy="Gary on NEWBRAIN"<br />
+TimeZoneStatus="2"<br /> TimeZoneInfo="LAEAAEUAYQBzAHQAZQByAG4AIABTAHQAYQBuAGQAYQByAGQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsAAAABAAIAAAAAAAAAAAAAAEUAYQBzAHQAZQByAG4AIABEAGEAeQBsAGkAZwBoAHQAIABUAGkAbQBlAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAACAAIAAAAAAAAAxP///w=="<br />
+DualMode="0"<br />
+Sequence="0"<br />
+ADFrequency="0"<br />
+BitsPerSample="16"<br />
+BytesPerSecond="40000000"<br />
+RadioCenterFreq="91600000"<br />
+SampleRate="10000000"<br />
+UTCSeconds="1793292478"<br />
+TimeBias="0"/\><br />
+\</SDR-XML-Root\><br />
 <pre>********************************
 Chunk type: Data (data).
 Chunk size shown in DS64 section.</pre>
