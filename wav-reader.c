@@ -201,6 +201,10 @@ void read_auxi(FILE *fcnp)
     unsigned int tempVal = 0, halfCount = (chunkSize/2)-1;
     int n = 0;
     char tempChar[chunkSize]={}, auxiChar[chunkSize] = {};
+    
+    // Get the current position in case it is not a XML.
+    fpos_t fpos;
+    fgetpos(fcnp, &fpos);
         
     // Read in the entire chunk as characters
     numBytes=fread(&auxiChar,sizeof(char),chunkSize,fcnp);
@@ -245,7 +249,7 @@ void read_auxi(FILE *fcnp)
         // Didn't find XML, so assume it is binary.
         printf("Not XML. Assuming binary and parsing...\n");
         // Reset the file pointer to re-read the data since it is binary.
-        fseek(fcnp,(0-chunkSize),SEEK_CUR);
+        fsetpos(fcnp, &fpos);
         parse_auxi_binary(chunkSize,fcnp);
     }
         
@@ -392,7 +396,7 @@ void parse_auxi_binary(unsigned int chunkSize, FILE *fcnp)
     
 void parse_auxi_xml(unsigned int chunkSize, char *xmlChar, FILE *fcnp)   
 {    
-    // An auxiliary chunk with this length is known to be
+    // An auxiliary chunk with XML text is known to be
     // based on the SDRconsole (by SDR-radio.com). If so,
     // it will contain an XML file consisting of ASCII
     // character / NULL character pairs (one ASCII character /
@@ -400,6 +404,9 @@ void parse_auxi_xml(unsigned int chunkSize, char *xmlChar, FILE *fcnp)
     // entire chunk, then check if every other character
     // is the NULL character. If so, it's most likely an
     // XML file.
+    
+    // This will simply print out the XML text. A later version
+    // of this program will actually break down the XML tags.
     
     unsigned int i = 0;
     int quoteFlag = 0; // Use this to toggle carriage returns for XML quotes.
@@ -644,7 +651,7 @@ int main(int argc, char **argv)
         return 4;
     }
     
-    printf("WAVE Reader.\n");
+    printf("WAVE Reader, version 1.0.1\n");
     printf("********************************\n");    
     printf("Filename: %s\n", argv[1]);
     
@@ -812,4 +819,3 @@ int main(int argc, char **argv)
     fclose(fp);
     return 0;
 }
-
